@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor > * {
+    padding: 10px;
+    
+}
+
+
+.contenedor{
+    display: grid;
+    min-height: 100vh;
+    background-image: url(../imagenes/FondoDorado.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header{
+    background-color: #012225;
+    
+}
+
+header h1{
+    background: linear-gradient(
+            to right, #FFD700, #feed8b,
+            #FFD700, #fff27d);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-family: 'Hurricane', cursive;
+        font-size: 50px;
+        text-align: center;
+        
+}
+
+
+
+
+nav{
+    background-color: #012225;
+    border-radius: 0px 0px 20px 20px;
+    border-top: #feed8b 2px double;
+    
+}
+
+.fa-bars:before{
+    font-size: 25px;
+    background: linear-gradient(
+            to right, #FFD700, #feed8b,
+            #FFD700, #fff27d);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+
+nav  .menu-bar{
+    display: none;
+    list-style: none;
+}
+
+nav .menu-hamburguesa .desplegar{
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+nav .menu-hamburguesa .desplegar a{
+    background: linear-gradient(
+            to right, #FFD700, #feed8b,
+            #FFD700, #fff27d);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        padding: 10px;
+        font-size: 18px;
+}
+
+.contenedor .barra_navegacion a{
+    font-size: 30px;
+}
+
+.contenedor .barra_navegacion a:hover{
+    transform: scale(1.1);
+    
+}
+
+
+
+nav img{
+    display: none;
+}
+
+
+
+
+nav .barra_navegacion{
+    position: relative;
+}
+
+nav .barra_navegacion .menu-hamburguesa{
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    
+}
+
+nav ul li a{
+    background: linear-gradient(
+            to right, #FFD700, #feed8b,
+            #FFD700, #fff27d);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+
+
+
+nav .menu-hamburguesa:hover .desplegar{
+    display: block;
+    position: absolute;
+    list-style: none; 
+    text-decoration: none;
+    background-color: #012225;
+}
+
+
+
+nav h1{
+    display: none;
+}
+
+main{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .trabajos{
+    text-align: center;
+}
+
+
+
+.contenedor .trabajos img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    box-shadow: 14px 14px 15px 0 black;
+    margin: 10px;
+    object-fit: cover;
+    
+}
+
+.contenedor .trabajos a{
+    color: #012225;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.contenedor .trabajos .Trabajo:hover{
+    transform: scale(1.1);
+}
+.contenedor .trabajos .Trabajo a:hover{
+    color: #feed8b;
+    -webkit-text-stroke: 1px #012225;
+}
+
+
+
+footer{
+    background-color: #012225;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 40px;
+    padding: 2px;
+}
+
+
+@media screen and (min-width: 530px) {
+    nav ul{
+        display:flex;
+        justify-content: space-between;
+    }
+    nav  .menu-bar{
+        display: flex;
+        list-style: none;
+    }
+    nav  .menu-hamburguesa{
+        display: none;
+        list-style: none;
+    }
+
+    .contenedor .barra_navegacion a{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 710px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .trabajos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenedor .barra_navegacion a{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+    }
+     
+    .contenedor .barra_navegacion a{
+        font-size: 30px;
+    }
+
+    header{
+        display: none;
+    }
+
+    nav h1{
+        display: block;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-family: 'Hurricane', cursive;
+        font-size: 50px;
+        background: linear-gradient(
+            to right, #FFD700, #feed8b,
+            #FFD700, #fff27d);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
+    nav{
+        
+        font-size: 30px;
+        background-color: #012225;
+        margin-top:6px;
+        border-radius: 0px 40px 40px 0px;
+        color: yellow;
+        width: 300px;
+        
+        
+}
+
+.contenedor .barra_navegacion .menu-bar{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 20px 0px;    
+}
+
+nav li{
+    padding: 5px;
+    display: flex;
+    margin-top: 40px;
+}
+
+nav img{
+    display: flex;
+    margin: 55px;
+}
+
+
+footer{
+    grid-column: 1 / -1;
+    margin-top: 15px;
+    
+}
+}
+
+/*-------- Contacto CSS --------*/
+/*
+.c_contacto{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr ;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    
+}
+
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 400px;
+    height: 500px;
+    background-color: bisque;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2 ;
+}
+
+.redes img{
+    width: 100px;
+}
+
+
+/*-------- CSS Sobre Mi --------*/
+/*
+.c_sobreMi{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    gap: 15px;
+}
+
+.MiDescripcion{
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 2;
+}
+
+.MiFoto{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2 ;
+}
+
+.SobreMi__Video{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.texto_video{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
