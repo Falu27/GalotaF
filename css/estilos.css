@@ -323,6 +323,21 @@ input{
 }
 
 
+/*-------- BootStraps --------*/
+form{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #feed8b;
+    border-radius: 20px;
+}
+
+.form-BS{
+    display: none;
+}
+
+
+
+
 /*-------- MEDIAS QUERY --------*/
 
 @media screen and (min-width: 530px) {
@@ -353,6 +368,7 @@ input{
 }
 
 @media screen and (min-width: 710px) {
+    
     .trabajos {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -388,6 +404,11 @@ input{
 }
 
 @media screen and (min-width: 1024px) {
+    /*Form de BootStrap*/
+    .form-BS{
+        display: block;
+    }
+    
     .contenedor{
         display: grid;
         grid-template-columns: auto 1fr;
