@@ -169,6 +169,7 @@ main .trabajos{
 .contenedor .trabajos .Trabajo:hover{
     transform: scale(1.1);
 }
+
 .contenedor .trabajos .Trabajo a:hover{
     color: #feed8b;
     -webkit-text-stroke: 1px #012225;
