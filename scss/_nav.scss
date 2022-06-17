@@ -1,0 +1,73 @@
+nav{
+    background-color: $fondoOscuro;
+    border-radius: 0px 0px 20px 20px;
+    border-top: $colorAmarillito 2px double;
+    position: relative;
+
+    h1{
+        display: none;
+    }
+
+    .menu-bar{
+        display: none;
+        list-style: none;
+        
+        li{
+
+            a{
+                font-size: 1.125rem;
+                background: $gradiante;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+    }
+
+    img{
+        display: none;
+    }
+
+    .menu-hamburguesa{
+            display: block;
+            cursor: pointer;
+            list-style: none;
+            &:hover{
+                .desplegar{
+                    display: block;
+                    position: absolute;
+                    list-style: none; 
+                    text-decoration: none;
+                    background-color: $fondoOscuro;
+                }
+            }
+            li{
+
+                .fa-bars{
+                    &:before{
+                        font-size: 1.5625rem;
+                        background: $gradiante;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                    }
+                }
+                .desplegar{
+                    display: none;
+                    border-radius: 0px 0px 10px 10px;
+                    li{
+                        a{
+                            font-size: 1.875rem;
+                            background: $gradiante;
+                            -webkit-text-fill-color: transparent;
+                            -webkit-background-clip: text;
+                            padding: 10px;
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }

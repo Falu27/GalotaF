@@ -1,0 +1,152 @@
+@media screen and (min-width: 530px){
+    nav{
+        
+        ul{
+            display:flex;
+            justify-content: space-between;
+            
+        
+        }
+        a{
+            font-size: 1.125rem;
+        }
+        .menu-bar{
+            display: flex;
+            list-style: none;
+        }
+        .menu-hamburguesa{
+            display: none;
+            list-style: none;
+        }
+    }
+    .SobreMi{
+        p{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 2.3rem;
+        }
+    }
+    .Logos__proyectos img{
+            width: 100px;
+            object-fit: contain;
+    }
+}
+@media screen and (min-width: 710px){
+    nav{
+        a{
+            font-size: 1.25rem;
+        }
+    }
+    .trabajos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+    .SobreMi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto 1fr;
+        .tituloSobreMi{
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+                font-size: 2.5rem;
+        }
+        p, img{
+            grid-row: 2/3;
+        }
+    }
+    
+    .misTrabajos{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+    }
+    .pagina{
+            text-align: end;
+            grid-column: 2 / 3;
+    }
+    .Logos__proyectos img{
+            width: 140px;
+            object-fit: contain;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+        .contenedor{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+        
+        header{
+            display: none;
+        }
+        nav{
+            background-color: $fondoOscuro;
+            margin-top:6px;
+            border-radius: 0px 40px 40px 0px;
+            color: yellow;
+            width: 300px;
+            ul{
+                a{
+                    font-size: 1.875rem;
+                }
+            }
+            
+            h1{
+                display: block;
+                padding-top: 20px;
+                padding-left: 10px;
+                font-family: $letraCursiva;
+                font-size: 3.125rem;
+                background: $gradiante;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            li{
+                    padding: 5px;
+                    display: flex;
+                    margin-top: 40px;
+                }
+            .menu-bar{
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                padding: 20px 0px;
+            }
+            img{
+                display: flex;
+                margin: 55px;
+            }
+            
+        }
+        
+        footer{
+            grid-column: 1 / -1;
+            margin-top: 15px;
+        }
+    }
+
+    .SobreMi{
+        h2{
+            font-size: 3rem;
+        }
+    }
+
+    .c_preguntasFrecuentes{
+        .consulta{
+            grid-column: 2 / 3;
+        }
+        
+        footer{
+            grid-column: 1 / -1;
+            margin-top: 15px;
+        }
+    }
+}

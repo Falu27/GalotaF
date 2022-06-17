@@ -1,0 +1,41 @@
+/*--- VARIABLES ---*/
+
+$letraCursiva:'Hurricane', cursive;
+
+/*-- Mapa de Color Claro --*/
+$coloresClaros:(
+    fondoOscuro: #012225,
+    gradiante: linear-gradient(
+        to right, #FFD700, #feed8b,
+        #FFD700, #fff27d),
+    colorAmarillito: #feed8b,
+    fondoImagen: url(../imagenes/FondoDorado.webp),
+    bordes:#FFD700,
+);
+$fondoOscuro: map-get($coloresClaros, fondoOscuro);
+$gradiante: map-get($coloresClaros, gradiante);
+$colorAmarillito: map-get($coloresClaros, colorAmarillito);
+$fondoImagen: map-get($coloresClaros, fondoImagen);
+$bordes: map-get($coloresClaros, bordes)
+
+
+/*---- Mapa color Dark ---- 
+
+$letraCursiva:'Hurricane', cursive;
+$coloresDark:(
+    fondoOscuro: #000000,
+    gradiante: linear-gradient(
+        to right, #ffffff, #979797,
+        #474747, #c5c5c5),
+    colorAmarillito: #ffffff,
+    fondoImagen: url(../imagenes/FondoDoradoJP.jpg),
+    bordes: #ffffff,
+
+);
+$fondoOscuro: map-get($coloresDark, fondoOscuro);
+$gradiante: map-get($coloresDark, gradiante);
+$colorAmarillito: map-get($coloresDark, colorAmarillito);
+$fondoImagen: map-get($coloresDark, fondoImagen);
+$bordes: map-get($coloresDark, bordes)
+
+*/
