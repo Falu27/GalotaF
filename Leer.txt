@@ -1,3 +1,0 @@
-Agregue map en _variables cambiando el mapa de colores de claros a oscuros. Claro que para que funcione hay que descomentar uno y comentar el otro jaja.
-En main.scss, en la parte comentada como /* html preguntas frecuentes */ agregue un extend y mixin, solo de prueba para ver su funcionamiento, que cambia el color de fondo de algunas preguntas. Tambien probe otro EXTEND en /*-- html mis trabajos --*/ tambien dentro del main.scss, lo comente seguido como "Probando EXTEND". 
-Luego los borro para dejar el codigo de forma prolija. En el Head de Index agregue seo.
