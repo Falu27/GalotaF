@@ -505,10 +505,11 @@ form{
 }
 
 @media screen and (min-width: 1024px) {
-    /*Form de BootStrap*/
+    /*Form de BootStrap
     .form-BS{
         display: block;
     }
+    */
     
     .contenedor{
         display: grid;
