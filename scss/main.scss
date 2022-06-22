@@ -131,7 +131,7 @@ main{
 .c_preguntasFrecuentes{
     .preguntasFrecuentes{
 
-        /* ---- MIXIN ---- */
+        /* ---- MIXIN ---- 
         @mixin cajaPregunta ($bgcolor) {
             background-color: $bgcolor;
             border: 1px solid antiquewhite;
@@ -149,7 +149,9 @@ main{
             }
             
         }
-        /* -- remplazado por mixin ---- 
+        */
+
+        /* -- remplazado por mixin ---- */
         .pregunta{
             background-color: #0122258b;
             border: 1px solid antiquewhite;
@@ -166,7 +168,8 @@ main{
                 font-size: 1.1rem;
             }
         }
-        */
+        
+        /*
         .pregunta{
             @include cajaPregunta(bgcolor)
         }
@@ -174,7 +177,7 @@ main{
             @include cajaPregunta($fondoOscuro)
         }
 
-        /*---- EXTEND ----
+        ---- EXTEND ----
         .pre1{
             @extend .pregunta;
             background-color: pink;

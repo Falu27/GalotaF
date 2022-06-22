@@ -249,10 +249,9 @@ nav {
 
 /*---- html preguntas frecuentes ----*/
 .c_preguntasFrecuentes .preguntasFrecuentes {
-  /* ---- MIXIN ---- */
-  /* -- remplazado por mixin ---- 
-        .pregunta{
-            background-color: #0122258b;
+  /* ---- MIXIN ---- 
+        @mixin cajaPregunta ($bgcolor) {
+            background-color: $bgcolor;
             border: 1px solid antiquewhite;
             border-radius: 25px;
             padding: 10px;
@@ -266,9 +265,19 @@ nav {
             p{
                 font-size: 1.1rem;
             }
+            
         }
         */
-  /*---- EXTEND ----
+  /* -- remplazado por mixin ---- */
+  /*
+        .pregunta{
+            @include cajaPregunta(bgcolor)
+        }
+        .pre2, .pre4{
+            @include cajaPregunta($fondoOscuro)
+        }
+
+        ---- EXTEND ----
         .pre1{
             @extend .pregunta;
             background-color: pink;
@@ -279,10 +288,9 @@ nav {
             background-color: bisque;
             color: $fondoOscuro;
         }
-        */
-  /*---- MIXIN ----*/ }
+        */ }
   .c_preguntasFrecuentes .preguntasFrecuentes .pregunta {
-    background-color: bgcolor;
+    background-color: #0122258b;
     border: 1px solid antiquewhite;
     border-radius: 25px;
     padding: 10px;
@@ -293,19 +301,6 @@ nav {
     .c_preguntasFrecuentes .preguntasFrecuentes .pregunta h3 {
       font-size: 1.4rem; }
     .c_preguntasFrecuentes .preguntasFrecuentes .pregunta p {
-      font-size: 1.1rem; }
-  .c_preguntasFrecuentes .preguntasFrecuentes .pre2, .c_preguntasFrecuentes .preguntasFrecuentes .pre4 {
-    background-color: #012225;
-    border: 1px solid antiquewhite;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    color: white;
-    font-family: sans-serif; }
-    .c_preguntasFrecuentes .preguntasFrecuentes .pre2 h3, .c_preguntasFrecuentes .preguntasFrecuentes .pre4 h3 {
-      font-size: 1.4rem; }
-    .c_preguntasFrecuentes .preguntasFrecuentes .pre2 p, .c_preguntasFrecuentes .preguntasFrecuentes .pre4 p {
       font-size: 1.1rem; }
   .c_preguntasFrecuentes .preguntasFrecuentes .consulta {
     text-align: center; }
