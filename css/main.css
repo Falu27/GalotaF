@@ -1,7 +1,7 @@
 /*Import*/
 /*--- VARIABLES ---*/
 /*-- Mapa de Color Claro --*/
-/*---- Mapa color Dark ---- 
+/*---- Mapa color Dark ----  
 
 $letraCursiva:'Hurricane', cursive;
 $coloresDark:(
@@ -12,13 +12,14 @@ $coloresDark:(
     colorAmarillito: #ffffff,
     fondoImagen: url(../imagenes/FondoDoradoJP.jpg),
     bordes: #ffffff,
-
+    textos: #fff,
 );
 $fondoOscuro: map-get($coloresDark, fondoOscuro);
 $gradiante: map-get($coloresDark, gradiante);
 $colorAmarillito: map-get($coloresDark, colorAmarillito);
 $fondoImagen: map-get($coloresDark, fondoImagen);
-$bordes: map-get($coloresDark, bordes)
+$bordes: map-get($coloresDark, bordes);
+$textos: map-get($coloresDark, textos);
 
 */
 nav {
@@ -226,13 +227,13 @@ nav {
   font-size: 2rem;
   background-color: #feed8b;
   border-radius: 30px;
-  font-family: "Hurricane", cursive; }
+  font-family: "Hurricane", cursive;
+  color: #012225; }
 
 .c_sobreMi .SobreMi p {
   font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1.2em;
-  color: #012225; }
+  line-height: 1.2em; }
 
 .c_sobreMi .SobreMi .miFoto {
   text-align: center; }
@@ -268,7 +269,7 @@ nav {
             
         }
         */
-  /* -- remplazado por mixin ---- */
+  /* -- remplazr en caso de habilitar el mixin ---- */
   /*
         .pregunta{
             @include cajaPregunta(bgcolor)

@@ -3,6 +3,7 @@
 $letraCursiva:'Hurricane', cursive;
 
 /*-- Mapa de Color Claro --*/
+
 $coloresClaros:(
     fondoOscuro: #012225,
     gradiante: linear-gradient(
@@ -11,15 +12,17 @@ $coloresClaros:(
     colorAmarillito: #feed8b,
     fondoImagen: url(../imagenes/FondoDorado.webp),
     bordes:#FFD700,
+    
 );
 $fondoOscuro: map-get($coloresClaros, fondoOscuro);
 $gradiante: map-get($coloresClaros, gradiante);
 $colorAmarillito: map-get($coloresClaros, colorAmarillito);
 $fondoImagen: map-get($coloresClaros, fondoImagen);
-$bordes: map-get($coloresClaros, bordes)
+$bordes: map-get($coloresClaros, bordes);
+$textos: map-get($coloresClaros, textos);
 
 
-/*---- Mapa color Dark ---- 
+/*---- Mapa color Dark ----  
 
 $letraCursiva:'Hurricane', cursive;
 $coloresDark:(
@@ -30,12 +33,13 @@ $coloresDark:(
     colorAmarillito: #ffffff,
     fondoImagen: url(../imagenes/FondoDoradoJP.jpg),
     bordes: #ffffff,
-
+    textos: #fff,
 );
 $fondoOscuro: map-get($coloresDark, fondoOscuro);
 $gradiante: map-get($coloresDark, gradiante);
 $colorAmarillito: map-get($coloresDark, colorAmarillito);
 $fondoImagen: map-get($coloresDark, fondoImagen);
-$bordes: map-get($coloresDark, bordes)
+$bordes: map-get($coloresDark, bordes);
+$textos: map-get($coloresDark, textos);
 
 */
